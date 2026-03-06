@@ -1,7 +1,8 @@
 import Nav from "./src/navBar/nav";
 import './src/navBar/nav.css';
-
 import './styles.css'
+import "@fontsource/inria-serif/300.css"; // Light
+import "@fontsource/inria-serif";
 
 export const metadata = {
   title: 'Next.js',
