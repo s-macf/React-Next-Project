@@ -8,7 +8,7 @@ function handleClick(msg) {
 
 function GetButton({name, msg}) {
     return (
-        <div className="buttonArea">
+        <div>
             <button 
                 onClick={() => handleClick(msg)} 
                 className="navButton"
@@ -23,12 +23,33 @@ function getNav() {
     return (
         <nav>
             <div className="navBar">
-                <Link href="/">
-                    <GetButton name="Home" msg="Home clicked!" />
-                </Link>
-                <Link href="/src/pages/page2">
-                    <GetButton name="Page2" msg="Page2 clicked!"/>
-                </Link>
+
+                <div className="leftBar">
+                    <Link href="/">
+                        <GetButton name="Home" msg="Home clicked!" />
+                    </Link>
+                    <Link href="/src/pages/page2">
+                        <GetButton name="=" msg="Page2 clicked!" />
+                    </Link>
+                </div>
+
+                <div className="rightBar">
+                    <Link href="/src/pages/page2">
+                        <GetButton name="Rooms" msg="Page3 clicked!" />
+                    </Link>
+                    <Link href="/src/pages/page2">
+                        <GetButton name="Wellness" msg="Page3 clicked!" />
+                    </Link>
+                    <Link href="/src/pages/page2">
+                        <GetButton name="Experiences" msg="Page3 clicked!" />
+                    </Link>
+                    <Link href="/src/pages/page2">
+                        <GetButton name="Dining" msg="Page3 clicked!" />
+                    </Link>
+                    <Link href="/src/pages/page2">
+                        <GetButton name="Book" msg="Page3 clicked!" />
+                    </Link>
+                </div>
             </div>
         </nav>
     )

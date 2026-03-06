@@ -1,21 +1,19 @@
-import LikeButton from './src/like-button';
-
 function Header({ title }) {
   return <h1>{title ? title : 'Default title'}</h1>;
 }
  
 export default function HomePage() {
-  const names = ['Ada Lovelace', 'Grace Hopper', 'Margaret Hamilton'];
- 
   return (
-    <div className='page'>
-      <Header title="Develop. Preview. Ship." />
-      <ul>
-        {names.map((name) => (
-          <li key={name}>{name}</li>
-        ))}
-      </ul>
-      <LikeButton />
+    <div className="homePage">
+      <div className="homeImg"></div>
+      <div className='coverScreen'>
+        <p className="title">Hello There!</p>
+      </div>
+    <div>
+      <p className="page">
+        Hello!
+      </p>
+    </div>
     </div>
   );
 }

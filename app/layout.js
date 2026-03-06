@@ -1,5 +1,5 @@
 import Nav from "./src/navBar/nav";
-import './src/navBar/styles.css';
+import './src/navBar/nav.css';
 
 import './styles.css'
 
