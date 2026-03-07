@@ -1,12 +1,14 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname } from "next/navigation";
+
 
 function handleClick(msg) {
     console.log("Button pressed " + msg)
 }
 
-function GetButton({name, msg, className}) {    
+function GetButton({name, msg, className}) {   
     return (
         <div>
             <button 
@@ -20,8 +22,11 @@ function GetButton({name, msg, className}) {
 }
 
 function getNav() {
+    const pathname = usePathname();
+    const isHome = pathname === "/";
+
     return (
-        <nav>
+        <nav className={isHome ? "navTransparent" : "navFill"}>
             <div className="navBar">
 
                 <div className="leftBar">

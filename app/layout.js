@@ -1,5 +1,6 @@
 import Nav from "./src/navBar/nav";
 import './src/navBar/nav.css';
+import './src/pages/RoomsPage/rooms.css';
 import './styles.css'
 import "@fontsource/inria-serif/300.css"; // Light
 import "@fontsource/inria-serif/400.css"; // Light
